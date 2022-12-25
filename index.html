@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="body-state1">
+    <div class="control">
+      <div class="state1">
+        <h1 class="status">JS Rocket Launch!</h1>
+        <button class="btn" onclick="changeState(2)">LAUNCH!</button>
+      </div>
+      <div class="state2">
+        <h1 class="status">10</h1>
+        <button class="btn" onclick="abort()">abort?</button>
+      </div>
+      <div class="state3">
+        <h1 class="status">Lift Off!</h1>
+      </div>
+      <div class="state4">
+        <h1 class="status">Well done!</h1>
+        <button class="btn" onclick="changeState(1)">again?</button>
+      </div>
+      <div class="popup">
+        <p>Are you sure you want to abort?</p>
+        <div class="text-right">
+          <button class="btn btn-cancel" onclick="changeState(1)">Yes</button>
+          <button class="btn btn-primary" onclick="changeState(2)">No</button>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="rocket-contianer">
+      <img src="images/rocket.gif" alt="rocket" class="rocket" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
